@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestion des Employés</title>
+  
+</head>
+<body>
+  <h1>Gestion des Employés</h1>
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Téléphone</th>
+        <th>Département</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Lignes d'employés seront ajoutées dynamiquement -->
+    </tbody>
+  </table>
+
+  <div id="addEmployeeForm">
+    <h2>Ajouter un Employé</h2>
+    <form id="employeeForm">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom"><br>
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" name="prenom"><br>
+      <label for="telephone">Téléphone:</label>
+      <input type="text" id="telephone" name="telephone"><br>
+      <label for="departement">Département:</label>
+      <input type="text" id="departement" name="departement"><br>
+      <input type="hidden" id="employeeId" name="employeeId">
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+  <button id="edit-button" style="display: none;">Modifier</button>
+
+  <script src="script2.js"></script>
+</body>
+</html>
